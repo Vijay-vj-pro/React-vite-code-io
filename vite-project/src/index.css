@@ -1,0 +1,125 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient( to right, rgb(68, 57, 235), rgb(170, 3, 120) ,rgb(197, 130, 6));
+  background-color: blueviolet;
+}
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom: 2px rgb(0, 81, 151) solid;
+}
+nav h2{
+  color: rgb(255, 255, 255);
+  text-shadow:1px 0px rgb(0, 24, 255), -1px 0px rgb(255, 8, 8), 2px 1px rgb(0, 24, 255), -2px -1px rgb(255, 8, 8), 3px 2px rgb(0, 24, 255), -3px -2px rgb(255, 8, 8);
+  margin: 20px;
+  user-select: none;
+}
+nav ul{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav li{
+  height: 40px;
+  color: rgb(0, 0, 0);
+  list-style: none;
+  padding: 10px;
+  margin: 3px;
+  cursor: pointer;
+  user-select: none;
+}
+nav li:hover{
+  border-bottom: 2px rgb(0, 81, 151) solid;
+}
+nav button {
+  color: white;
+  font-weight: bold;
+  background-color: rgb(58, 151, 58);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 10px 14px;
+  user-select: none;
+}
+nav button:hover{
+  background-color: rgb(107, 182, 107);
+  transform: scale(1.05);
+  transition: all 300ms;
+}
+nav button:active{
+  background-color: rgb(58, 151, 58);
+}
+.HContainer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow-x: scroll;
+  padding: 10px;
+  scrollbar-width: thin;
+}
+.card{
+  background-color: beige;
+  min-width: 200px;
+  height: 250px;
+  box-shadow: 2px 2px 5px rgba(29, 29, 29, 0.7);
+  border-radius: 10px;
+  font-family: sans-serif;
+  margin: 10px;
+  padding: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  user-select: none;
+  border: 1px rgb(187, 187, 187) solid;
+}
+.card:hover{
+  transition: all 300ms;
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.856);
+  box-shadow: 5px 10px 5px rgba(12, 11, 11, 0.4), -1px 10px 5px rgba(12, 11, 11, 0.4);
+}
+.card img{
+  height: 50%;
+  border-radius: 10px;
+}
+.card h3{
+  font-size: medium;
+}
+.card p{
+  font-size: small;
+}
+.card button {
+  padding: 5px 10px;
+  margin: 7px;
+  background-color: rgb(183, 113, 224);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(26, 25, 25, 0.808), -1px 1px 3px rgba(27, 26, 26, 0.801);
+}
+.card button:hover{
+  transform: scale(1.05);
+  transition: transform 300ms;
+}
+.card button:active{
+  background-color: rgb(122, 76, 148);
+  transition: none;
+}
