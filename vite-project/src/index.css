@@ -120,6 +120,8 @@ nav button:active{
   transition: transform 300ms;
 }
 .card button:active{
-  background-color: rgb(122, 76, 148);
+  background-color: rgb(126, 79, 153);
   transition: none;
 }
+
+/* after uploaded in github*/
